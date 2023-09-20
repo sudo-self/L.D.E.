@@ -1,3 +1,29 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+@keyframes implode {
+  100% {transform: scale(0)}
+}
+body {
+  background: (1.png);
+  color: rgb(210, 145, 196);
+}
+
+p {
+  text-align: center;
+}
+
+#blob {
+  background-color: none;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  position: fixed;
+  z-index: -1;
+  filter: blur(180px);
+  transition: transform 0.8s cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+
 * {
   margin: 0;
   padding: 0;
@@ -31,7 +57,7 @@ body {
   justify-content: space-between;
   text-decoration: none;
   text-transform: uppercase;
-  color: #000;
+  color: #ffc1ee;
   position: relative;
   transition: var(--main-transition);
 }
@@ -62,7 +88,7 @@ body {
 #link:hover::before {
   transform: translatey(0px);
   opacity: 1;
-  color: #fa3141;
+  color: #fcf3f9;
 }
 
 #link:hover > .letter:nth-child(1) {
